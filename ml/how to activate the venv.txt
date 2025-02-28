@@ -1,0 +1,15 @@
+to activate the venv: 
+
+first, Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+then, .venv\Scripts\Activate.ps1
+
+
+To permanently changed the execution policy:
+- change the current execution policy: Get-ExecutionPolicy -List
+
+- Set a less restrictive policy, such as RemoteSigned, which allows local scripts to run: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+- Confirm the change: Get-ExecutionPolicy -Scope CurrentUser
+
+- Activate the virtual environment: .venv\Scripts\Activate.ps1
